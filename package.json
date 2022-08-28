@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a01-HuGuo-UNC-Chapel-Hill/issues"
   },
-  "homepage": "https://github.com/comp426-2022-fall/a01-HuGuo-UNC-Chapel-Hill#readme"
+  "homepage": "https://github.com/comp426-2022-fall/a01-HuGuo-UNC-Chapel-Hill#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
 }
