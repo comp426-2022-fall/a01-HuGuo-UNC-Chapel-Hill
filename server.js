@@ -17,7 +17,7 @@ if (argv[1]) {
     port = argv[1]
     // console.log(port)
 } else {
-    port = 4000
+    port = 3000
 }
 
 // Use the fs module to create an arrow function using `fs.readFile`.
