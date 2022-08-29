@@ -5,16 +5,17 @@ const http = require('http')
 const fs = require('fs')
 
 // Require minimist module (make sure you install this one via npm).
-var parseArgs = require('minimist')(process.argv.slice(2))
+var argv = require('minimist')
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
-// parseArgs = process.argv.slice(2)
+argv = process.argv.slice(2)
 
 // Define a const `port` using the argument from the command line. 
 // Make this const default to port 3000 if there is no argument given for `--port`.
-var port
-if (parseArgs.length > 2) {
-    port = parseArgs[2]
+var port = 0
+if (argv[1]) {
+    port = argv[1]
+    // console.log(port)
 } else {
     port = 4000
 }
@@ -56,7 +57,7 @@ const server = http.createServer((req, res) => {
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
 server.listen(port, () => {
-    console.log('Server running at port ${port}')
+    console.log(`Server running at port ${port}`)
 })
 
 
