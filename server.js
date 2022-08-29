@@ -6,7 +6,7 @@ const fs = require('fs')
 
 // Require minimist module (make sure you install this one via npm).
 var args = require('minimist')(process.argv.slice(2))
-console.log(args.port)
+// console.log(args.port)
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 
